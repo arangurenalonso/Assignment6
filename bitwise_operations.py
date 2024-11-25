@@ -2,6 +2,10 @@ import sys
 import json
 
 def validate_input(integers):
+    """
+    Validates the input to ensure it contains only integers.
+    If validation fails, the script exits with an error message.
+    """
     try:
         return [int(x) for x in integers.split(",")]
     except ValueError:
